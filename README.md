@@ -79,4 +79,4 @@ ionic cordova prepare android
 
 ### Publicar un release
 
-appcenter codepush release-cordova -a <ownerName>/<appName>
+appcenter codepush release-cordova -a < ownerName >/< appName >
