@@ -1,3 +1,4 @@
+
 # demo-update-app-codepush
 Hola Chikis, en esta ocación veremos como actualizar una aplicación hecha en Ionic 5 y Cordova usando CodePush de Appcenter;
 
@@ -9,37 +10,40 @@ Más información en https://docs.microsoft.com/en-us/appcenter/distribution/cod
 
 Primero tenemos que configurar nuestra maquina con lo siguiente:
 
-# Instalar la CLI de App Center
+### Instalar la CLI de App Center
 appCenter npm install -g appcenter-cli
 
-# Instalar  Cordova
+### Instalar  Cordova
 Cordova npm install -g cordova
 
-# Native run
+### Native run
 Native run npm i -g native-run
 
-# GRADLE_HOME
+### GRADLE_HOME
  Asegurensense de tener Gradle en el path de su S.O 
  https://gradle.org/releases/
 
-# Registrarse en AppCenter
+### Registrarse en AppCenter
 Debemos registrarnos y crear nuestra aplicacion en App Center
 https://appcenter.ms/sign-in
 
-# Configurar config.xml
+### Configurar config.xml
 Agregar APP_SECRET, CodePushDeploymentKey y access origin dentro de nuestro proyecto Ionic
 
-# Agregar los complementos para CodePush
+### Agregar los complementos para CodePush
 cordova plugin add cordova-plugin-code-push@latest
 npm install @ionic-native/code-push
 
-# Crear metodo para verificar e instalar las actualizaciones
-Importaremos el modulo de CodePush
+### Crear metodo para verificar e instalar las actualizaciones
+Importaremos el modulo de CodePush en el appModule
 
+```javascript
 import {CodePush } from '@ionic-native/code-push/ngx'
+```
 
-Metodo para verificar e instalar la actualización:
 
+**Metodo para verificar e instalar la actualización:**
+```javascript
  checkCodePush() {
     this.codePush
       .sync(
@@ -63,13 +67,15 @@ Metodo para verificar e instalar la actualización:
         }
       );
   }
+```
 
-# Login en appcenter desde nuestra aplicación
+
+### Login en appcenter desde nuestra aplicación
 appcenter login
 
-# Compilar el proyecto (en esta demo es para Android)
+### Compilar el proyecto (en esta demo es para Android)
 ionic cordova prepare android
 
-# Publicar un release
+### Publicar un release
 
 appcenter codepush release-cordova -a <ownerName>/<appName>
