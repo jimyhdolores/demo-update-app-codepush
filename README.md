@@ -1,4 +1,5 @@
 
+![Image of Yaktocat](https://github.com/jimyhdolores/demo-update-app-codepush.git/master/code_push_ionic.jpg)
 # demo-update-app-codepush
 Hola Chikis, en esta ocación veremos como actualizar una aplicación hecha en Ionic 5 y Cordova usando CodePush de Appcenter;
 
