@@ -1,5 +1,7 @@
 {
   "name": "demo-update-app-codepush",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
