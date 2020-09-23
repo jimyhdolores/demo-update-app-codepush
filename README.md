@@ -12,13 +12,13 @@ Más información en https://docs.microsoft.com/en-us/appcenter/distribution/cod
 Primero tenemos que configurar nuestra maquina con lo siguiente:
 
 ### Instalar la CLI de App Center
-appCenter npm install -g appcenter-cli
+npm install -g appcenter-cli
 
 ### Instalar  Cordova
-Cordova npm install -g cordova
+npm install -g cordova
 
 ### Native run
-Native run npm i -g native-run
+npm i -g native-run
 
 ### GRADLE_HOME
  Asegurensense de tener Gradle en el path de su S.O 
