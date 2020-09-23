@@ -80,3 +80,6 @@ ionic cordova prepare android
 ### Publicar un release
 
 appcenter codepush release-cordova -a < ownerName >/< appName >
+
+Si te gusta el video suscríbete, dale Like y comparte, asi me estas ayudando a generar más contenido, gracias.
+😎Actualizar aplicación Ionic 5 + CodePush📲 https://youtu.be/0OpfSvXTqNs
